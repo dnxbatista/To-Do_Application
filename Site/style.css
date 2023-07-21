@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+body {
+    background: rgb(24,0,80);
+    background-image: linear-gradient(0deg, rgba(24,0,80,1) 0%, rgb(42, 13, 85) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.nav {
+    margin: auto;
+}
+
+.nav h1 {
+    text-align: center;
+    color:aliceblue;
+    text-decoration: none;
+}
+
+#main-text {
+    color: white;
+    font-family: 'Monrope', sans-serif;
+    font-size: 35px;
+}
+
+.container {
+    margin: auto;
+    padding-top: 15px;
+}
+
+.tasks-handler {
+    margin: auto;
+    padding-top: 15px;
+    width: 500px;
+    height: 700px;
+    border: 1.5px solid rgb(221, 221, 221);
+    border-radius: 45px;
+}
+
+.task-handler {
+    margin: auto;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid white;
+    border-radius: 50px;
+    width: 85%;
+    position: relative;
+    font-size: 25px;
+    color:aliceblue;
+}
+
+.task-handler:hover {
+    transition: 0.19s;
+    border-color: rgb(162, 86, 233);
+    transform: translateX(5px);
+}
+
+#delete-button {
+    border: 0px;
+    border-radius: 15px;
+    position: relative;
+}
+
+#delete-button:hover {
+    transition: 0.15s;
+    background-color: red;
+    color: white;
+}
