@@ -29,6 +29,28 @@ body {
     padding-top: 15px;
 }
 
+.input-handler {
+    margin: auto;
+    text-align: center;
+    padding: 15px 15px;
+}
+
+#add-button {
+    border: 0px;
+    border-radius: 5px;
+}
+
+#add-button:hover {
+    transition: 0.18s;
+    color: rgb(255, 255, 255);
+    background-color: rgb(110, 38, 169);
+}
+
+#item-input {
+    border: 0px;
+    border-radius: 5px;
+}
+
 .tasks-handler {
     margin: auto;
     padding-top: 15px;
@@ -53,7 +75,7 @@ body {
 .task-handler:hover {
     transition: 0.19s;
     border-color: rgb(162, 86, 233);
-    transform: translateX(5px);
+    transform: translateX(6px);
 }
 
 #delete-button {
