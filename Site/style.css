@@ -29,13 +29,36 @@ body {
     padding-top: 15px;
 }
 
+.input-handler {
+    margin: auto;
+    text-align: center;
+    padding: 15px 15px;
+}
+
+#add-button {
+    border: 0px;
+    border-radius: 5px;
+}
+
+#add-button:hover {
+    transition: 0.18s;
+    color: rgb(255, 255, 255);
+    background-color: rgb(110, 38, 169);
+}
+
+#item-input {
+    border: 0px;
+    border-radius: 5px;
+}
+
 .tasks-handler {
     margin: auto;
     padding-top: 15px;
     width: 500px;
-    height: 700px;
+    height: 500px;
     border: 1.5px solid rgb(221, 221, 221);
     border-radius: 45px;
+    background-color: rgba(0, 0, 0, 0.171);
 }
 
 .task-handler {
@@ -48,6 +71,7 @@ body {
     position: relative;
     font-size: 25px;
     color:aliceblue;
+    font-family: 'Monrope', sans-serif;
 }
 
 .task-handler:hover {
@@ -60,6 +84,7 @@ body {
     border: 0px;
     border-radius: 15px;
     position: relative;
+    transform: translateY(-5px);
 }
 
 #delete-button:hover {
