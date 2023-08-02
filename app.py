@@ -1,21 +1,25 @@
-from flask import Flask, render_template, jsonify, request
+from flask import Flask, render_template, jsonify, request , redirect, url_for
+import json
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder="templates")
 
-toDoList = [
-    {
-        'item': 'Buy Food!'
-    },
-]
+toDoList = []
 
 @app.route("/")
 def home():
-    return render_template("index.html",itens=toDoList)
+    return render_template("index.html", itens=toDoList)
 
-@app.route("/", methods=["post"])
-def form_post():
-    text = request.form["item-input-name"]
-    return text
+@app.route("/add", methods=["POST"])
+def add():
+    todoItem = request.form["item-input-name"]
+    if(len(todoItem) <= 1): return redirect(url_for("home"))
+    toDoList.append({"item": todoItem})
+    return redirect(url_for("home"))
+
+@app.route("/delete/<int:index>")
+def delete(index):
+    del toDoList[index]
+    return redirect(url_for("home"))
 
 @app.route("/api/itens")
 def itens_list():
